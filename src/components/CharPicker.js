@@ -28,6 +28,7 @@ const CharPicker = props => {
       })
       .catch(err => {
         console.log(err);
+        setIsLoading(false);
       });
   }, []);
 
